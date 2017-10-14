@@ -1,0 +1,16 @@
+<form ng-submit="vm.login()">
+  <select class="" name="" ng-model="vm.color">
+    <option ng-repeat="item in vm.colors"value="{{item[1]}}">{{item[0]}}</option>
+  </select>
+  <label for="" style="color: {{vm.color}}">Numero de documento</label>
+  <input type="text" name="name" ng-model="vm.user.numDocumento">
+
+  <label for="">Contraseña</label>
+  <input type="password" name="name" ng-model="vm.user.password">
+
+  <select class="" name="" ng-model="vm.usuarios">
+    <option ng-repeat="item in vm.colors"value="{{item[1]}}">{{item[0]}}</option>
+  </select>
+
+  <button type="submit" name="button" class="btn btn-danger" style="background: {{vm.color}}">Loguearse</button>
+</form>
